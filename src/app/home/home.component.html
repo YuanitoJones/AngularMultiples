@@ -15,8 +15,8 @@
   <mat-card style="display: flex; justify-content: center">
     <div class="numberList" *ngIf="multiples.length > 0">
       <span *ngFor="let number of multiples">
-        <div class="numberInList" [ngStyle]="{ color: CheckSmallerMultiple(number) }">
-          {{ number }}<span *ngIf="getMultiples(number) !== 0">[{{ getMultiples(number) }}]</span>
+        <div class="numberInList" [ngStyle]="{ color: CheckSmallerMultiple(number.multipleNumber) }">
+          {{ number.multipleNumber }}<span *ngIf="number.multipleList.length > 0">[{{ number.multipleList }}]</span>
         </div>
       </span>
     </div>
