@@ -11,6 +11,15 @@
 import { env } from './.env';
 
 export const environment = {
+  firebase: {
+    projectId: 'angular-recruit',
+    appId: '1:389887047868:web:2b230cca32bc51b057f8b9',
+    storageBucket: 'angular-recruit.appspot.com',
+    apiKey: 'AIzaSyCXRiQIVHf8txGBx_jbtG5ibAvfkWrNtyY',
+    authDomain: 'angular-recruit.firebaseapp.com',
+    messagingSenderId: '389887047868',
+    measurementId: 'G-6WS5S7X2ZY',
+  },
   production: false,
   version: env['npm_package_version'] + '-dev',
   serverUrl: '/api',
