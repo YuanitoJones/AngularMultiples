@@ -1,0 +1,34 @@
+.container {
+  text-align: center;
+  padding: 1em;
+}
+
+.logo {
+  width: 150px;
+  margin: 0 auto;
+}
+
+q {
+  font-style: italic;
+  quotes: "« " " »";
+}
+
+.inputButton {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.numberList {
+  background-color: beige;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+
+.numberInList {
+  width: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
