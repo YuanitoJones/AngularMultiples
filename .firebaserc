@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "angular-recruit"
+  },
+  "targets": {
+    "angular-recruit": {
+      "hosting": {
+        "recruit-angular": [
+          "angular-recruit"
+        ]
+      }
+    }
   }
 }

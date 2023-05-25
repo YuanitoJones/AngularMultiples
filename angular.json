@@ -123,6 +123,16 @@
           "options": {
             "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "recruit-angular:build:production",
+            "firebaseProject": "angular-recruit",
+            "firebaseHostingSite": "angular-recruit"
+          }
         }
       }
     }
