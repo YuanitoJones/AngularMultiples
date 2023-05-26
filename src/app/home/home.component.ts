@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import IMultipleList from '@app/interfaces/multipleList.interface';
+import { MultiplesService } from '@app/services/multiples.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
-  ngOnInit() {}
-
+export class HomeComponent {
+  constructor(private multipleService: MultiplesService) {}
   // Number to use in input
   initialNumber = 0;
   //Array which will contain al multiples
@@ -25,6 +25,7 @@ export class HomeComponent implements OnInit {
     }
     //Assigns array to multiples variable to reassign instead of pushing infinitely
     this.multiples = calculatedNumbers;
+    this.multipleService.addMultiple({ mainNumber: this.initialNumber, multiples: this.multiples });
   }
 
   CheckSmallerMultiple(receivedNumber: number) {
