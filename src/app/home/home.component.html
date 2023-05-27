@@ -1,14 +1,16 @@
 <div class="container">
   <mat-card>
     <p>
-      <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo" />
+      <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo" style="width: 120px" />
     </p>
     <mat-card-content>
-      <mat-card-title translate>Proyecto padrísimo para reclutamiento!!</mat-card-title>
+      <mat-card-title translate>Multiplicidad de números!</mat-card-title>
     </mat-card-content>
-    <mat-card-content>Ingrese un valor</mat-card-content>
     <div class="inputButton">
-      <input type="number" [(ngModel)]="initialNumber" />
+      <div class="inputField">
+        <mat-label>Ingrese un valor</mat-label>
+        <input type="number" min="0" [(ngModel)]="initialNumber" />
+      </div>
       <mat-button-toggle type="button" (click)="CalculateNumber(initialNumber)">Calcular múltiplos</mat-button-toggle>
     </div>
   </mat-card>

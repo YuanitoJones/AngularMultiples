@@ -12,7 +12,6 @@ import { MaterialModule } from './material.module';
 import { RouteReusableStrategy, ApiPrefixInterceptor, ErrorHandlerInterceptor, SharedModule } from '@shared';
 import { HomeModule } from './home/home.module';
 import { ShellModule } from './shell/shell.module';
-import { AboutModule } from './about/about.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
@@ -32,7 +31,6 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
     SharedModule,
     ShellModule,
     HomeModule,
-    AboutModule,
     AppRoutingModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()), // must be imported as the last module as it contains the fallback route

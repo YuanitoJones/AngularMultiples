@@ -12,19 +12,22 @@ q {
   font-style: italic;
   quotes: "« " " »";
 }
-
+.inputField {
+  display: flex;
+  flex-direction: column;
+}
 .inputButton {
   display: flex;
+  margin-top: 30px;
   justify-content: space-around;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 .numberList {
-  background-color: beige;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 80%;
+  border-radius: 15px;
 }
 
 .numberInList {

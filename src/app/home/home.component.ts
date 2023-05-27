@@ -25,7 +25,7 @@ export class HomeComponent {
     }
     //Assigns array to multiples variable to reassign instead of pushing infinitely
     this.multiples = calculatedNumbers;
-    this.multipleService.addMultiple({ mainNumber: this.initialNumber, multiples: this.multiples });
+    this.multipleService.addMultiple({ mainNumber: this.initialNumber, multiples: calculatedNumbers });
   }
 
   CheckSmallerMultiple(receivedNumber: number) {
@@ -37,6 +37,7 @@ export class HomeComponent {
   }
 
   getMultiples(receivedNumber: number) {
+    //Returns array of multiple numbers (if not)
     const multiples: number[] = [];
     if (receivedNumber % 3 === 0) multiples.push(3);
     if (receivedNumber % 5 === 0) multiples.push(5);
